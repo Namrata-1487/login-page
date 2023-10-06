@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="java.js ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Login page</title>
+</head>
+
+<body class="container-fluid">
+    <nav class="row ">
+        <div class="navbar-brand">
+            <h2>Logo</h2>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/">About</a></li>
+            <li class="nav-item"><a href="/">Services</a></li>
+            <li class="nav-item"><a href="/">Contact</a></li>
+            <li class="nav-button">
+                <button class="login" type="submit" onclick="myfunction()">Login</button>
+            </li>
+        </ul>
+    </nav>
+    <!-- login page  -->
+    <div class="card" id="registration">
+        <form action="">
+            <h1>Registration</h1>
+            <div class="input-list">
+                <input type="text" class="input" id="username"required>
+                <label for="username">Username</label>
+                <i class="fa fa-user" id="icon" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-triangle" id="error" aria-hidden="true"></i>
+
+            </div>
+            <div class="input-list">
+                <input type="email" class="input" id="email" required>
+                <label for="Email">Email</label>
+                <i class="fa fa-envelope"  id="icon"  aria-hidden="true"></i>
+                <i class="fa fa-exclamation-triangle" id="error" aria-hidden="true"></i>
+                <p class="errormessage">   please enter correct infomation</p>
+            </div>
+            <div class="input-list">
+                <input type="password" class="input" id="password" required>
+                <label for="Password">Password</label>
+                <i class="fa fa-lock" id="icon"  aria-hidden="true"></i>
+
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"  id="terms-condition" required>
+                <label class="form-check-label" for="">
+                    I agree Terms and Conditions
+                </label>
+                <!-- register button  -->
+                <button type="submit" class="submit"> Register</button>
+                <!-- login page redirection -->
+                <p>Already have an account? <a href="#login">Login</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- <div class="block" id="login">
+        <h1>Registration</h1>
+
+        <div>
+            <input type="text" class="email" placeholder="Email ">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div>
+            <input type="text" class="password" placeholder="Password ">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+        </div>
+
+    </div> -->
+</body>
+
+</html>
